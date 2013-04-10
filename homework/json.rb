@@ -4,6 +4,7 @@ require 'json'
 
 def get_favorite(key, json)
 
-  # Add Your Code Here
+  dataTemp = JSON.parse(json)
+  return dataTemp["favorites"][key]
 
 end
